@@ -13,6 +13,13 @@ box constrains at container
 buttons not to be responsive
 expandable_page_view
  space between - spacer - expanded sized box
+ use ConstrainedBox
+
+padding - margin some times makes problems for responsive
+
+use center instead of padding
+
+use flexible for fixed spacing (flexible means the max size is normal size of the widget)
 
  fitted box don't work with expanded or spacer
  fitted box try use it with scale down
@@ -29,6 +36,15 @@ be careful while using intrinsic width,height at animations or builder widgets
 
 
 
+
+
+  //good to use at mobile or tablet but not at web because the web can change directly by resizing the window
+  static late double width, height;
+
+  static init(BuildContext context) {
+    height = MediaQuery.sizeOf(context).height;
+    width = MediaQuery.sizeOf(context).width;
+  }
 
 
 

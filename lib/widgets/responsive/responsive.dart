@@ -1,11 +1,19 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/size_config.dart';
 
 extension ScaleFactorFontSize on num {
-  // var dispatcher = PlatformDispatcher.instance;
-  // var physicalWidth = dispatcher.views.first.physicalSize.width;
-  // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
-  // double width = physicalWidth / devicePixelRatio;
+  //can use media query for direct changes at window size
+
+  double get widthWithoutMediaQuery {
+    var dispatcher = PlatformDispatcher.instance;
+    var physicalWidth = dispatcher.views.first.physicalSize.width;
+    var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
+    double width = physicalWidth / devicePixelRatio;
+
+    return width;
+  }
+
   double getScaleFactor(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
 
@@ -38,9 +46,4 @@ extension ResponsiveIntFontSize on int {
   double responsive(BuildContext context) {
     return toDouble().responsive(context);
   }
-}
-
-void fo(BuildContext context) {
-  double fp = 32.0.responsive(context);
-  double dsds = 32.responsive(context);
 }
