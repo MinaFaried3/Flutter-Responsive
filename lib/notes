@@ -1,0 +1,100 @@
+SliverFillRemaining = expanded at scrolling , and can use expanded as child of it
+layout builder
+text scale from media query
+aspect ratio with images , icons , charts ,(any thing need to specify a size to can be rendered)
+responsive text
+AdaptiveLayout widget
+intrinsic width,height
+add scroll views at any thing will be small screen
+animated container for every thing
+AnimatedCrossFade
+animated position
+box constrains at container
+buttons not to be responsive
+expandable_page_view
+ space between - spacer - expanded sized box
+
+ fitted box don't work with expanded or spacer
+ fitted box try use it with scale down
+
+ the list tile widget is expanded , so it has an effect at it's siding widgets
+
+
+you don't need to specify a height for horizntal list view use
+
+wrap the list tile with center
+ypu don't need to specify a width for list tile use intrinsic width
+
+be careful while using intrinsic width,height at animations or builder widgets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
